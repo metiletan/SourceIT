@@ -1,0 +1,27 @@
+<!-- Работа с && (и) и || (или) 
+Если переменная  a  больше нуля и меньше 5-ти, то выведите 'Верно', иначе выведите
+'Неверно'. Проверьте работу скрипта при a, равном 5, 0, -3, 2. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+	  
+	var message;  
+	var a = +prompt('Type a number', '2');
+	if (a > 0 && a < 5){
+		message = 'Верно';
+	}
+	else {
+		message = 'Неверно';
+	}
+	alert(message);
+
+  </script>
+</body>
+
+</html>

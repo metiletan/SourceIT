@@ -1,0 +1,25 @@
+<!--Дана строка из 6-ти цифр. Проверьте, что сумма первых трех цифр равняется сумме
+вторых трех цифр. Если это так - выведите 'да', в противном случае выведите
+'нет'.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+	
+	var str = prompt ('Type six numbers','123456');
+	var str1 = +(str[0]) + +(str[1])+ +(str[2]);
+	var str2 = +(str[3]) + +(str[4])+ +(str[5]);
+	if (str1 == str2)
+		alert('да');
+	else
+		alert('нет');
+	  
+  </script>
+</body>
+
+</html>

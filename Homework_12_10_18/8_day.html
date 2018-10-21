@@ -1,0 +1,29 @@
+<!--В переменной  day  лежит какое-то число из интервала от  1  до  31. Определите в какую
+декаду месяца попадает это число (в первую, вторую или третью)..-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+	  
+	var message;
+	var day = +prompt('Type a date from 1 to 31', '');
+	if (day >= 1 && day <= 10) { 
+		message = '1 декада';
+	}
+	if (day >= 11 && day <= 20) {
+		message = '2 декада';
+	}
+	if (day >= 21 && day <=31 ) {
+		message = '3 декада';
+	}
+	alert(message);
+	  
+  </script>
+</body>
+
+</html>

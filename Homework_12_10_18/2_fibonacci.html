@@ -1,0 +1,28 @@
+<!-- Найти 11е число Фибоначчи, ряд начинается с 1-->
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+	  //Fn = Fn-1 + Fn-2
+	var i = +prompt('Type an index number of Fibonacci number to calculate', '11')
+	var F = 0;
+	var n = 2;
+	var a = 1; //Fn-1
+	var b = 0; //Fn-2
+
+	for (; n<=i; n++) {
+		F = a + b;
+		b = a;
+		a = F;
+	}
+
+	alert(F);
+	  
+  </script>
+</body>
+
+</html>

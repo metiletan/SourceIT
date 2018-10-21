@@ -1,0 +1,32 @@
+<!--В переменной month лежит какое-то число из интервала от 1 до 12. Определите в какую
+пору года попадает этот месяц (зима, лето, весна, осень)..-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+	  
+	var message;
+	var month = +prompt('Введите номер месяца', '5');
+	if (month == 12 || month <= 2) { 
+		message = 'зима';
+	}
+		if (month >= 3 && month <=5 ) {
+		message = 'весна';
+	}
+	if (month >= 6 && month <= 8) {
+		message = 'лето';
+	}
+	if (month >= 9 && month <= 11) {
+		message = 'осень';
+	}
+	alert(message);
+
+  </script>
+</body>
+
+</html>

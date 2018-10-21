@@ -1,0 +1,33 @@
+<!-- Работа с логическими переменными
+Если переменная  test  равна true, то выведите 'Верно', иначе выведите 'Неверно'. 
+Проверьте работу скрипта при test, равном true, false. Напишите два варианта скрипта - с
+короткой записью и с длинной.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+	  
+	var message;
+	var test = prompt('Type true or false', 'true');
+	if (test === 'true') 
+		message = 'Верно';
+	else
+		message = 'Неверно';
+
+	alert(message);
+
+	/*Короткая запись
+	var test = prompt('Type');
+	var message = (test === 'true') ? 'Верно' : 'Неверно';
+	
+	alert(message);*/
+
+  </script>
+</body>
+
+</html>

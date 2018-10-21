@@ -1,0 +1,34 @@
+<!-- Написать код, который будет через промпт получать коэффициенты а, б и ц и считать корни квадратного уравнения-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+	  // ax2 + bx + c = 0
+	var a = +prompt('Type a', '');
+	var b = +prompt('Type b', '');
+	var c = +prompt('Type c', '');
+
+	var D = b*b - 4*a*c; // D=b^{2}-4ac
+
+	if (D < 0)
+		alert('none');
+	  
+	if (D === 0) {
+		var x = -b / (2*a);
+		alert(x);
+	}
+	if (D > 0) {
+		var x1 = (-b + Math.sqrt(D)) / (2*a);
+		var x2 = (-b - Math.sqrt(D)) / (2*a);
+		alert('x1 = ' + x1);
+		alert('x2 = ' + x2);
+	}
+  </script>
+</body>
+
+</html>
