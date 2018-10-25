@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+    <script>
+	  
+		function countChar(str, char){
+		  var char1 = 0;
+		  for (var i = 0; i < str.length; i++){
+			if (str[i] === char){
+			  char1++;
+			}
+		  }
+		  return char1;
+		}
+
+		var arr = ['a','b','c','b','s'];
+		char = 'b'
+		result = countChar(arr, char)
+		console.log(`символов '${char}' в строке ${result} шт`);
+		
+		/*
+		var arr = ['a','b','c','b','s'];
+		var B = 0;
+		var char = 0;
+		
+		for (var i = 0; i < arr.length; i++){
+			if (arr[i] === 'b'){
+			B++;
+			}
+			else {
+			char++;
+			}
+		}
+		console.log(`символов b в строке ${B} шт., других букв ${char} шт.`);*/
+		
+		
+		
+    </script>  
+    </body>
+</html>
