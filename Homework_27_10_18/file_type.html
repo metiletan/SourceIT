@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+	
+	var file = prompt('Загрузите файл', 'photo.jpg');
+    
+    if (file.endsWith('jpg')||file.endsWith('png')||file.endsWith('jpeg'))
+      alert(true);
+    else
+      alert(false);  
+	
+	/* 2-й вариант
+	
+	var file = prompt('Загрузите файл', 'photo.jpg');
+    var type = file.split('.');
+    var type1 = type[1];
+    
+    if (type1 == 'jpg'||type1 =='png'||type1 =='jpeg')
+      alert(true);
+    else
+      alert(false);*/
+	  
+ </script>
+</body>
+
+</html>

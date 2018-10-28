@@ -7,6 +7,18 @@
         
     <script>
        
+		/* с помощью toString
+		
+		var arr = [1, 2, [3, [5, 6, [45, 67]], 4], 5, [6, 7, 8]];
+		var str = arr.toString();
+		var arr2 = str.split(',');
+		var sum = arr2.reduce(function(total, num){
+			return Number(total) + Number(num);
+							  
+							  })
+		console.log(sum);
+		
+		*/
 		var arr = [1, 2, [3, [5, 6, [45, 67]], 4], 5, [6, 7, 8]];
 		var sum = 0;
 		for (i = 0; i < arr.length; i++){

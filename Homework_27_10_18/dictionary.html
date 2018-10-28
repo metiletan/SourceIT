@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+    <script>
+		
+		var lang = {
+			ru: ['зеленый', "красный", "голубой"],
+			en: ['green', 'red', 'blue'],
+		}
+		
+		/*for(var n = 0; n < lang.ru.length; n++){
+		  console.log(lang.ru[n] + ': ' + lang.en[n]);
+		}
+		*/
+		
+		var lang_keys = []
+		for(var prop in lang){
+		  lang_keys.push(prop);
+		}
+		for(var i=0; i<lang[lang_keys[0]].length; i++){
+			var arr_message=[];
+			for(var j=0; j<lang_keys.length; j++){
+			  arr_message.push(lang[lang_keys[j]][i]);
+			}
+			console.log(arr_message.join(' : '));
+		}
+			
+    </script>  
+    </body>
+</html>
