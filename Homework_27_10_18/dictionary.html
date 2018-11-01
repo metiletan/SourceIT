@@ -15,7 +15,30 @@
 		/*for(var n = 0; n < lang.ru.length; n++){
 		  console.log(lang.ru[n] + ': ' + lang.en[n]);
 		}
-		*/
+		
+		
+		в классе
+		
+		var lang = {
+			ru: ['зеленый', "красный", "голубой"],
+			en: ['green', 'red', 'blue'],
+		}
+		
+		var str = ['', '', ''];
+
+		for(var prop in lang) {
+		  for(var i = 0; i <= prop.length; i++){
+			str[i] += lang[prop][i];
+			if(prop == 'ru'){
+			  str[i] += ' : ';
+			}
+		  }
+		}
+
+		for (var j = 0; j < str.length; j++){
+		  console.log(str[j]);
+		}*/
+		
 		
 		var lang_keys = []
 		for(var prop in lang){
@@ -28,6 +51,7 @@
 			}
 			console.log(arr_message.join(' : '));
 		}
+		
 			
     </script>  
     </body>

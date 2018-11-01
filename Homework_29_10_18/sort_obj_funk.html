@@ -1,0 +1,59 @@
+<!--написать свои  функции сортировки объектов юзеров по имени и по возрасту; (объекты в массиве);-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+	<script>
+
+		var users = [
+			{name: 'Genry', age: 40},
+			{name: 'Andy', age: 23},
+			{name: 'Sindy', age: 28}
+		];
+		//Сортировка по имени
+
+		var users = [
+			{name: 'Genry', age: 40},
+			{name: 'Andy', age: 23},
+			{name: 'Sindy', age: 28}
+		];
+		//Сортировка по имени
+
+		function compareName(a, b) {
+			if (a.name > b.name) {
+				return 1;
+			}
+			if (a.name < b.name) {
+				return -1;
+			}
+			return 0;
+		};
+
+		console.log('Сортировка по имени:', users.sort(compareName)); 
+
+		//Выводим имена по возрастанию по критерию Name:
+
+		//ES6: for(name of users) {console.log(name['name']);
+		
+		for(var i = 0; i < users.length; i++) {
+		   console.log(users[i].name); 
+		};
+
+		  //Сортировка по возрасту
+
+		function compareAge(a, b) {
+			return a.age - b.age;
+		};
+		console.log('Сортировка по возрасту:', users.sort(compareAge));
+
+		//Выводим имена по возрастанию по критерию Age
+
+		for(var i = 0; i < users.length; i++) {
+			console.log(users[i].name); 
+		};
+
+
+	</script>  
+</body>
+</html>

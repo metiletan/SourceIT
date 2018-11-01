@@ -1,0 +1,43 @@
+<!-- написать функцию, которая будет суммировать произвольное количество аргументов. Протестировать на 2, 3 и 5 аргументах.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <script>
+		
+	  	function sum(){
+		var result = 0;
+		for(var i = 0; i < arguments.length; i++){
+			result += Number(arguments[i]);
+		}
+			return result;
+		 } 
+	  	alert(sum(1,2,2,2,5));
+	  
+		/*вариант через prompt
+		
+		function sum(){
+		var result = 0;
+		for(var i = 0; i < arguments.length; i++){
+			result += Number(arguments[i]);
+		}
+			return result;
+		} 
+
+		var str = prompt("", "1,2,3")
+		var arr = str.split(',')
+		alert(sum.apply(null, arr));
+	      */
+  </script>
+</body>
+
+</html>
+	  
+  </script>
+</body>
+
+</html>
