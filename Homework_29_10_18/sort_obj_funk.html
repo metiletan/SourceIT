@@ -13,13 +13,6 @@
 		];
 		//Сортировка по имени
 
-		var users = [
-			{name: 'Genry', age: 40},
-			{name: 'Andy', age: 23},
-			{name: 'Sindy', age: 28}
-		];
-		//Сортировка по имени
-
 		function compareName(a, b) {
 			if (a.name > b.name) {
 				return 1;
@@ -52,6 +45,31 @@
 		for(var i = 0; i < users.length; i++) {
 			console.log(users[i].name); 
 		};
+		
+		
+		//Вариант в классе
+		var arr = [
+			{name: 'Genry', age: 40},
+			{name: 'Andy', age: 23},
+			{name: 'Sindy', age: 28}
+		];
+		function sorting(key, array){
+			var arr = array.slice();
+			arr.sort(function(a,b){
+				if(a[key] > b[key]){
+				return 1;
+			}
+			  else if(a[key] < b[key]){
+				return -1;  
+			  }
+			else{
+				return 0;
+			}
+			});
+			return arr;
+	  	}
+		console.log(sorting('name', arr));
+		console.log(sorting('age', arr));
 
 
 	</script>  
