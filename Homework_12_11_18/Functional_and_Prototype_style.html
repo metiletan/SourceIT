@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+    <script>
+//создать класс Worker в функциональном и прототипном стилях
+//name, rate, hoursWorked, overTimeRate
+//160 hours in month
+//overtime >160 hours
+//countSalary = function(hoursWorked)
+// get name, set name, get rate, set rate
+		
+		//Functional style
+		
+		/*function Worker(name, rate, hoursWorked, overTimeRate){
+			
+			this.setName = function(){
+				this._name = name;
+			}
+			this.getName = function(){
+				return name;
+			};
+			this.setRate = function(){
+				this._rate = rate;
+			}
+			this.getRate = function(){
+				return rate;
+			};
+			this.hoursWorked = function(){
+				this._hoursWorked = hoursWorked;
+			}
+			this.getHoursWorked = function(){
+				return hoursWorked;
+			};
+			this.setOverTimeRate = function(){
+				this._overTimeRate = overTimeRate;
+			};
+			this.getOverTimeRate = function(){
+				return overTimeRate;
+			};
+			
+			this.getCountSalary = function(){
+
+				if(hoursWorked <= 160){
+					return hoursWorked * rate;
+				}
+				else {
+
+					return overTimeRate * (hoursWorked - 160) + (hoursWorked * rate);
+				}
+			}
+		}
+		
+		var worker = new Worker('Peter', 50, 110, 5);
+		console.log(worker.getName());
+		console.log(worker.getRate());
+		console.log(worker.getHoursWorked());
+		console.log(worker.getOverTimeRate());
+		console.log(worker.getCountSalary());
+		*/
+		
+		
+		//Proto
+		
+		function Worker(name, rate, hoursWorked, overTimeRate){
+			
+			this.name = name;
+			this.rate = rate;
+			this.hoursWorked = hoursWorked;
+			this.overTimeRate = overTimeRate;
+		}
+		
+		Worker.prototype.CountSalary = function(){
+			if(this.hoursWorked <= 160){
+				return this.hoursWorked * this.rate;
+			}
+			else {
+
+				return this.overTimeRate * (this.hoursWorked - 160) + (this.hoursWorked * this.rate);
+			}
+		}
+	
+		
+		var worker = new Worker('Peter', 50, 110, 5);
+		console.log(worker.name);
+		console.log(worker.rate);
+		console.log(worker.hoursWorked);
+		console.log(worker.overTimeRate);
+		console.log(worker.CountSalary());
+		
+
+    </script>  
+    </body>
+</html>
